@@ -1,4 +1,4 @@
-/* CONFIGURAÇÃO GERAL */
+/* RESET GERAL */
 a {
     text-decoration: none;
 }
@@ -13,17 +13,85 @@ p {
 }
 
 
-/* ESTILOS */
+/* ESTILOS  */
+
 body {
     margin: 0px;
-    background: #f7f7f7;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f7;
     display: grid;
     gap: 60px;
-    margin-top: 50px;
     justify-items: center;
+    margin-top: 60px;
 }
 
+.menu {
+    display: flex;
+    gap: 20px;
+}
 
+.menu a {
+    color: black;
+    background: #fff;
+    padding: 15px 30px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
 
+img {
+    max-width: 100%;
+    display: block;
+}
 
+.conteudo {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.introducao {
+    padding: 40px;
+    background: #fff;
+    display: grid;
+    text-align: right;
+    align-content: center;
+    justify-items: end;
+    gap: 20px;
+}
+
+.introducao a {
+    background: #e21;
+    padding: 15px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+.subtitulo {
+    font-size: 60px;
+    text-align: right;
+    padding: 40px;
+    text-transform: uppercase;
+    color: #ccc;
+    align-self: center;
+}
+
+.vantagens-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 20px;
+    padding: 40px;
+    background: #fff;
+}
+
+.vantagens-item p {
+    grid-column: 2;
+}
+
+.rodape {
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #fff;
+}
