@@ -91,6 +91,12 @@ img {
     background-color: rgb(172, 29, 16);
 }
 
+
+.introducao-cover img {
+    object-fit: cover;
+    height: 100%;
+}
+
 .subtitulo {
     font-size: 60px;
     text-align: right;
@@ -124,3 +130,35 @@ img {
     box-sizing: border-box;
     background: #fff;
 }
+
+@media (max-width: 1000px) {
+    .conteudo-vantagem {
+        grid-template-columns: 1fr;
+    }
+    .subtitulo {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        gap: 30px;
+        margin-top: 20px;
+    }
+    .header {
+        gap: 30px;
+    }
+    
+    .introducao {
+        text-align: left;
+        justify-items: start;
+    }
+    .conteudo-vantagem {
+        grid-template-columns: 1fr;
+    }
+
+    .subtitulo {
+        font-size: 3rem;
+    }
+}
+
